@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial scale=1.0, maximum-scale=1.0 shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>The Brains</title>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- animate css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+	<!-- font -->
+	
+
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- 
+	jquery -->
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+	
+	<section  id="login"  class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h1 class="text-center witefont">Do You Want To Be the Next Pisonaire?</h1>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h3 class="witefont">Please Enter Your Name</h3>
+				<div class="input-group">
+					<div class="input-group-prepend">
+						<span class="input-group-text" for="playerName">Name</span>
+					</div>
+					<input id="playerName" type="text" class="form-control">
+				</div>
+				<button id="start" class="btn btn-block my-3">Start</button>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- ========================= -->
+	<section  id="afterLogin"  class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="text-center witefont">Hi <span id="nameTag"></span></h2>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3">
+					Your journey to be the next PISONAIRE is about to begin.
+				</h2>
+				<h3 class="witefont">Click Start To Begin</h3>
+				<button id="toLevel1" class="btn btn-block mt-5">Start</button>
+			</div>
+			
+		</div>
+	</section>
+
+
+<!-- 
+=============================== -->
+<section  id="question1"  class="row mt-4 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="text-center witefont">Question 1 Worth: 1 Peso</h2>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont text-center">What is the chemical symbol for gold?</h2>
+				<div>
+					<button id="a-answer" class="btn btn-block">a. Hg</button>
+					<button id="b-answer1" class="btn btn-block">b. Au</button>
+					<button id="c-answer" class="btn btn-block">c. Pb</button>
+					<button id="d-answer" class="btn btn-block">d. Sn</button>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+<!-- ============================== -->
+
+	<section id="correct" class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="witefont text-center">CORRECT</h2>
+			<h3 class="witefont text-center">Congratulations <span id="nameTag2"></span> </h3>
+			<h3 class="witefont text-center">Your currently earn <span id="earningTag"></span> Php.</h3> 
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3 text-center">
+					Next question is worth 2 Php.
+				</h2>
+				<button id="continueLevel2" class="btn btn-block">CONTINUE</button>
+			</div>
+			
+		</div>
+	</section>
+
+	
+
+	<!-- ================================wrong -->
+
+
+	<section id="wrong" class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="witefont text-center">WRONG</h2>
+			<h3 class="witefont text-center">Sorry <span id="wNameTag"></span>, you failed</h3>
+			<h3 class="witefont text-center">Your currently earn <span id="warningETag">0</span> Php.</h3> 
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3 text-center">
+					Better luck next time.
+				</h2>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- ================================== -->
+
+<section  id="question2"  class="row mt-4 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="text-center witefont">Question 2 Worth: 2 Php</h2>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont text-center">What is the first book in the bible ?</h2>
+				<div>
+					<button id="a2-answer" class="btn btn1 btn-block">a. Revelation</button>
+					<button id="b2-answer" class="btn btn-block">b. Matthew</button>
+					<button id="c2-answer" class="btn btn-block">c.Genesis</button>
+					<button id="d2-answer" class="btn btn-block">d. Issiah</button>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- ============================== -->
+
+	<section id="correct2" class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="witefont text-center">CORRECT</h2>
+			<h3 class="witefont text-center">Congratulations <span id="nameTag2-c"></span> </h3>
+			<h3 class="witefont text-center">Your currently earn <span id="earningTag2"></span> Php.</h3> 
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3 text-center">
+					Next question is worth 3 Php.
+				</h2>
+				<button id="continueLevel3" class="btn btn-block">CONTINUE</button>
+			</div>
+			
+		</div>
+	</section>
+
+	
+
+
+	<!-- ================================q3-->
+<section  id="question3"  class="row mt-4 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="text-center witefont">Question 3 Worth: 3 Php</h2>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont">The acceleration of a body is directly proportional to the applied force and is in the direction of the straight line in which the force acts shall fall in what prticular Law of Motion?</h2>
+			<div>
+					<button id="a3-answer" class="btn btn-block">a. 1st Law</button>
+					<button id="b3-answer" class="btn btn-block">b. 2nd Law</button>
+					<button id="c3-answer" class="btn btn-block">c. 3rd Law</button>
+					<button id="d3-answer" class="btn btn-block">d. 4th Law</button>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+<!-- 
+	========q
+-->
+<section id="correct3" class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="witefont text-center">CORRECT</h2>
+			<h3 class="witefont text-center">Congratulations <span id="nameTag3"></span> </h3>
+			<h3 class="witefont text-center">Your currently earn <span id="earningTag3"></span> Php.</h3> 
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3 text-center">
+					Next question is worth 3 Php.
+				</h2>
+				<button id="continueLevel4" class="btn btn-block">CONTINUE</button>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- ===============================q4
+ -->
+
+<section  id="question4"  class="row mt-4 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="text-center witefont">Question 4 Worth: 4 Php</h2>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont text-center">July 7, 2020 shall fall in what day?</h2>
+			<div>
+					<button id="a4-answer" class="btn btn-block">a. Monday</button>
+					<button id="b4-answer" class="btn btn-block">b. Tuesday</button>
+					<button id="c4-answer" class="btn btn-block">c. Wednesday</button>
+					<button id="d4-answer" class="btn btn-block">d. Thursday</button>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- ============ -->
+<section id="correct4" class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="witefont text-center">CORRECT</h2>
+			<h3 class="witefont text-center">Congratulations <span id="nameTag4"></span> </h3>
+			<h3 class="witefont text-center">Your currently earn <span id="earningTag4"></span> Php.</h3> 
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3 text-center">
+					Next question is worth 10 Php.
+				</h2>
+				<button id="continueLevel5" class="btn btn-block">CONTINUE</button>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- 	=============================-->
+
+<section  id="question5"  class="row mt-4 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="text-center witefont">Question 5 Worth: 5 Php</h2>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont">Hebrew name "Gabriel" gives a meaning of what in english?</h2>
+			<div>
+					<button id="a5-answer" class="btn btn-block">a.GOD has given.</button>
+					<button id="b5-answer" class="btn btn-block">b. GOD is salvation.</button>
+					<button id="c5-answer" class="btn btn-block">c. GOD will strengthen.</button>
+					<button id="d5-answer" class="btn btn-block">d. GOD is my strength.</button>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- ======================== -->
+
+<section id="correct5" class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="witefont text-center">CORRECT</h2>
+			<h3 class="witefont text-center">Congratulations <span id="nameTag5"></span> </h3>
+			<h3 class="witefont text-center">Your currently earn <span id="earningTag5"></span> Php.</h3> 
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3 text-center">
+					Next question is worth 6 Php.
+				</h2>
+				<button id="continueLevel6" class="btn btn-block">CONTINUE</button>
+			</div>
+			
+		</div>
+	</section>
+
+
+<!-- ===================q6 -->
+<section  id="question6"  class="row mt-4 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="text-center witefont">Question 6 Worth: 6 Php</h2>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont text-center">In what country today, do the Ancient Babylon Empire was located?</h2>
+			<div>
+					<button id="a6-answer" class="btn btn-block">a. Iraq</button>
+					<button id="b6-answer" class="btn btn-block">b. Iran.</button>
+					<button id="c6-answer" class="btn btn-block">c. Turkey.</button>
+					<button id="d6-answer" class="btn btn-block">d. Syria</button>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+<section id="correct6" class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="witefont text-center">CORRECT</h2>
+			<h3 class="witefont text-center">Congratulations <span id="nameTag6"></span> </h3>
+			<h3 class="witefont text-center">Your currently earn <span id="earningTag6"></span> Php.</h3> 
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3 text-center">
+					Next question is worth 6 Php.
+				</h2>
+				<button id="continueLevel7" class="btn btn-block">CONTINUE</button>
+			</div>
+			
+		</div>
+	</section>
+
+
+<!-- ==================== q7-->
+
+
+<section  id="question7"  class="row mt-4 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="text-center witefont">Question 7 Worth: 7 Php</h2>
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont text-center">What is the longest word in the dictionary?</h2>
+			<div>
+					<input type="text" name="text" class="inputArea">
+					<button class="btn btn-block mt-5">Submit</button>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section id="correct7" class="row section-log mt-5 width9  toCenter">
+		<div class="col-lg-12">
+			<h2 class="witefont text-center">CORRECT</h2>
+			<h3 class="witefont text-center">Congratulations <span id="nameTag7"></span> </h3>
+			<h3 class="witefont text-center">Your currently earn <span id="earningTag7"></span> Php.</h3> 
+		</div>
+
+		<div class="row toCenter col-lg-12 ">
+			<div class="col-lg-12 text-center">
+				<img class="brain1" src="assets/images/brain.gif">	
+			</div>
+			<div class="col-lg-12">
+				<h2 class="witefont py-3 text-center">
+					Next question is worth 6 Php.
+				</h2>
+				<button id="claim" class="btn btn-block">CONTINUE</button>
+			</div>
+			
+		</div>
+	</section>
+
+<!-- ================================== -->
+<
+
+
+
+
+
+
+
+<!-- 
+<footer class="row fixed-bottom footer-con">
+	<div class="col-lg-6">
+		<li class="witefont">Call a Friend</li>
+		<li class="witefont">50/50 Hint</li>
+	</div>
+	<div class="col-lg-6">
+		<li class="witefont">Current Money:</li>
+		<li class="witefont">Abort</li>
+	</div>
+	<div class="col-lg-6"></div>
+</footer> -->
+
+
+<!-- jquery first then popper js then bootstrap -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<!-- <script src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script> -->
+		<script type="text/javascript" src="assets/js/script.js"></script>
+
+	</body>
+	</html>
