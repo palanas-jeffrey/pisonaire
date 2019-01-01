@@ -46,8 +46,8 @@ input{
 	margin: 0 auto;
 }
 .brain{
-	height: 500px;
-	width: 500px;
+	height: 400px;
+	width: 400px;
 	/*margin: 0 auto;*/
 }
 .margin0{
@@ -79,7 +79,7 @@ input{
 }
 
 .inputArea{
-	height: 30px;
+	height: 35px;
 	width: 100%;
 }
 #afterLogin{
@@ -140,8 +140,8 @@ input{
 .brain1{
 	height: 250px;
 	width: 250px;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 h1,h3,h2{
 	font-size: 20px;

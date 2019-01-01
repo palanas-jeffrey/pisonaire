@@ -219,6 +219,34 @@ $("#continueLevel7").click(function(){
 });
 
 
-//if (input1== "pneumonoultramicroscopicsilicovolcanoconiosis") {
-	//document.getElementById("question7").
-// } else {}
+function answerMatch(){
+	var answerWord = document.getElementById("inputAnswer").value;
+	var input1 = answerWord;
+	if (input1=="echo") {
+	console.log("true");
+	$("#question7").fadeOut();
+	$("#correct7").fadeIn();
+	getPlayer();
+	$("#earningTag7").html("28");
+} else {
+	console.log("false");
+	$("#wrong").fadeIn();
+	$("#question7").fadeOut();
+	$("#warningETag").html("21");
+};
+};
+
+$("#input7").click(function(){
+	answerMatch();
+});
+
+$("#playAgain").click(function(){
+	$("#correct7").fadeOut();
+	logInShow();
+});
+
+function logInShow(){
+	$("#login").css("position", "");
+	$("#login").css("top", "");
+	$("#login").css("left", "");
+};
