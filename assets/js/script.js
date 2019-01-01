@@ -250,3 +250,8 @@ function logInShow(){
 	$("#login").css("top", "");
 	$("#login").css("left", "");
 };
+
+$("#retry").click(function(){
+	$("#wrong").fadeOut();
+	logInShow();
+});
