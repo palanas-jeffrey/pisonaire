@@ -9,9 +9,6 @@ body{
 }
 
 
-.width9{
-	width: 900px;
-}
 .brain1{
 	height: 400px;
 	width: 400px
@@ -26,9 +23,7 @@ body{
 .margin-bot{
 	margin-bottom:50px;
 }
-.padding-40{
-	padding-top:50px; 
-}
+
 
 .btn{
 	border:2px solid #0D47A1;
@@ -142,10 +137,30 @@ input{
 @media only screen and (min-width: 355px) and (max-width: 769px) {
 
 .brain1{
-	height: 500px;
-	width: 500px;
+	height: 250px;
+	width: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+h1,h3,h2{
+	font-size: 20px;
+}
+.margin-bot{
+	margin-bottom:10px;
 }
 
+.head-h{
+	height: 55px;
+}
+.head-c{
+	height: 20px;
+}
+input{
+	height: 40px;
+}
+.btn{
+	height: 40px;
+}
 }
 
 /*Tablet Styles*/
@@ -169,4 +184,8 @@ input{
 .footer-con{
 	width: 1200px;
 }*/
+
+.width9{
+	width: 900px;
+}
 }
