@@ -14,7 +14,7 @@ body{
 	width: 400px
 }
 .section-body{
-	height: 100vh;
+	min-height: 100vh;
 	color: #0D47A1;
 	margin: 0 auto;
 	width: 100%;
