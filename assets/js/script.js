@@ -221,7 +221,7 @@ $("#continueLevel7").click(function(){
 
 function answerMatch(){
 	var answerWord = document.getElementById("inputAnswer").value;
-	var input1 = answerWord;
+	var input1 = answerWord.toLowerCase();
 	if (input1=="echo") {
 	console.log("true");
 	$("#question7").fadeOut();
