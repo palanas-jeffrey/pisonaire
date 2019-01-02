@@ -144,8 +144,11 @@ input{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-h1,h3,h2,h4{
+h1,h3,h2{
 	font-size: 20px;
+}
+h4{
+	font-size: 15px;
 }
 .margin-bot{
 	margin-bottom:10px;
